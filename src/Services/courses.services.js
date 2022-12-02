@@ -42,7 +42,7 @@ class CoursesServices {
                     description: updateData.description,
                 },
                 {
-                    where: {id},
+                    where: { id },
                 }
             );
             const courseUpdated = await Courses.findByPk(id);
